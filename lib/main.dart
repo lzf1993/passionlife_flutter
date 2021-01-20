@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:passionlife/oop_learn.dart';
+import 'file:///F:/study/passionlife/lib/study/oop_learn.dart';
 
-import 'data_type.dart';
+import 'study/data_type.dart';
 
 void main() {
   runApp(MyApp());
