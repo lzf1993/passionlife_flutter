@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
-import 'file:///F:/study/passionlife/lib/study/oop_learn.dart';
+import 'package:passionlife/study/function_learn.dart';
+import 'package:passionlife/study/oop_learn.dart';
 
 import 'study/data_type.dart';
 
-void main() {
+void main2() {
   runApp(MyApp());
 }
 
@@ -28,6 +29,17 @@ class MyApp extends StatelessWidget {
 
      print(log1 == log2);
      print(log3 == log2);
+
+     //实例化
+     Student s2 = Student('北大', 'Tom', 16, city: '11');
+     s2.name;
+
+     //实例化
+     StudyFlutter flutter = StudyFlutter();
+     flutter.study();
+
+     TestFunction learn = TestFunction();
+     learn.start();
   }
 }
 

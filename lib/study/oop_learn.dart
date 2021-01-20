@@ -59,6 +59,20 @@ class Student extends Person{
 }
 
 
+//抽象类
+abstract class Study{
+  void study();
+}
+
+//实现类
+class StudyFlutter extends Study{
+  @override
+  void study() {
+     print('flutter study ');
+  }
+}
+
+
 class Logger{
 
   static Logger _cache;
