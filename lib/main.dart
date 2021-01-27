@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:passionlife/study/function_learn.dart';
-import 'package:passionlife/study/oop_learn.dart';
+import 'package:passionlife/study/learn_function2.dart';
 
-import 'study/data_type.dart';
+import 'study/learn_datatype1.dart';
+import 'study/learn_oop4.dart';
+
 
 void main2() {
   runApp(MyApp());
