@@ -1,21 +1,17 @@
-
-
 import 'package:flutter/material.dart';
-import 'package:flutter_color_plugin/flutter_color_plugin.dart';
 
-
-class PluginUse extends StatefulWidget {
+///如何导入和使用Flutter的资源文件？
+class ResPage extends StatefulWidget {
   @override
-  _PluginUseState createState() => _PluginUseState();
+  _ResPageState createState() => _ResPageState();
 }
 
-
-class _PluginUseState extends State<PluginUse> {
+class _ResPageState extends State<ResPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('如何使用Flutter包和插件？'),
+        title: Text('如何导入和使用Flutter的资源文件？'),
         leading: GestureDetector(
           onTap: () {
             Navigator.pop(context);
@@ -27,10 +23,11 @@ class _PluginUseState extends State<PluginUse> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Text(
-              'You have pushed the button this many times:',
-              style: TextStyle(color: ColorUtil.color('#a9ee00')),
-            ),
+            Image(
+              width: 100,
+              height: 100,
+              image: AssetImage('images/avatar.png'),
+            )
           ],
         ),
       ),

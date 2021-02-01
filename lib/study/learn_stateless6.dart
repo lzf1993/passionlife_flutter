@@ -3,10 +3,10 @@ import 'package:flutter/material.dart';
 
 
 void main3() {
-  runApp(MyApp());
+  runApp(learnLessFull());
 }
 
-class MyApp extends StatelessWidget {
+class learnLessFull extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
 
@@ -19,7 +19,14 @@ class MyApp extends StatelessWidget {
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       home: Scaffold(
-        appBar: AppBar(title: Text('StatelessWidget 基础组件')),
+        appBar: AppBar(
+            title: Text('StatelessWidget 基础组件'),
+            leading: GestureDetector(
+              onTap: () {
+                Navigator.pop(context);
+              },
+              child: Icon(Icons.arrow_back),
+            )),
         body: Container(
           decoration: BoxDecoration(color: Colors.white),
           //居中方式

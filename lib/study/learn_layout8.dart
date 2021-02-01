@@ -3,17 +3,17 @@ import 'package:flutter/material.dart';
 
 
 void main() {
-  runApp(learnStateFull());
+  runApp(learnLayout());
 }
 
 
-class learnStateFull extends StatefulWidget {
+class learnLayout extends StatefulWidget {
   @override
   _LearnStateFullState createState() => _LearnStateFullState();
 }
 
 
-class _LearnStateFullState extends State<learnStateFull> {
+class _LearnStateFullState extends State<learnLayout> {
 
   int _currentIndex = 0;
 
@@ -30,7 +30,16 @@ class _LearnStateFullState extends State<learnStateFull> {
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       home: Scaffold(
-        appBar: AppBar(title: Text('StatelessWidget 基础组件')),
+        appBar: AppBar(
+            title: Text('布局组件'),
+            leading: GestureDetector(
+              onTap: () {
+                //跳出
+                Navigator.pop(context);
+              },
+              child: Icon(Icons.arrow_back),
+            ),
+        ),
 
         bottomNavigationBar: BottomNavigationBar(
           currentIndex: _currentIndex,

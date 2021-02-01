@@ -30,7 +30,16 @@ class _LearnStateFullState extends State<learnStateFull> {
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       home: Scaffold(
-        appBar: AppBar(title: Text('StatelessWidget 基础组件')),
+        appBar: AppBar(
+          title: Text('StatefulWidget 基础组件'),
+          leading: GestureDetector(
+            onTap: () {
+              //跳出
+              Navigator.pop(context);
+            },
+            child: Icon(Icons.arrow_back),
+          ),
+        ),
 
         bottomNavigationBar: BottomNavigationBar(
           currentIndex: _currentIndex,
