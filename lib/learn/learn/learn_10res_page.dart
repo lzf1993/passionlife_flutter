@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 
+
 ///如何导入和使用Flutter的资源文件？
 class ResPage extends StatefulWidget {
   @override
   _ResPageState createState() => _ResPageState();
 }
+
 
 class _ResPageState extends State<ResPage> {
   @override

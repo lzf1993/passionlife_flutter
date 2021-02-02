@@ -3,15 +3,14 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-void main7(){
-  new GesturePage();
-}
+
 
 //手势检测
 class GesturePage extends StatefulWidget {
   @override
   _GesturePageState createState() => _GesturePageState();
 }
+
 
 class _GesturePageState extends State<GesturePage> {
 

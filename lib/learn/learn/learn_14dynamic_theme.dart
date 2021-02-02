@@ -8,6 +8,7 @@ class DynamicTheme extends StatefulWidget {
   _DynamicThemeState createState() => _DynamicThemeState();
 }
 
+
 class _DynamicThemeState extends State<DynamicTheme> {
 
   Brightness _brightness = Brightness.dark;

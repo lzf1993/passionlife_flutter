@@ -8,6 +8,7 @@ class AppLifeCycle extends StatefulWidget {
   _AppLifeCycleState createState() => _AppLifeCycleState();
 }
 
+
 class _AppLifeCycleState extends State<AppLifeCycle> with WidgetsBindingObserver{
 
   @override

@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_color_plugin/flutter_color_plugin.dart';
 
 
+//如何使用插件
 class PluginUse extends StatefulWidget {
   @override
   _PluginUseState createState() => _PluginUseState();

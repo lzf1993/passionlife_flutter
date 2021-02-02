@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
+
 ///如何打开第三方应用？
 class LaunchPage extends StatefulWidget {
   @override
   _LaunchPageState createState() => _LaunchPageState();
 }
+
 
 class _LaunchPageState extends State<LaunchPage> {
   @override

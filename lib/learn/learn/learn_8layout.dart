@@ -2,11 +2,8 @@ import 'package:flutter/material.dart';
 
 
 
-void main() {
-  runApp(learnLayout());
-}
 
-
+//布局使用
 class learnLayout extends StatefulWidget {
   @override
   _LearnStateFullState createState() => _LearnStateFullState();

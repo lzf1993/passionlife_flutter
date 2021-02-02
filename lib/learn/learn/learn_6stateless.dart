@@ -2,10 +2,8 @@ import 'package:flutter/material.dart';
 
 
 
-void main3() {
-  runApp(learnStateLess());
-}
 
+//StatelessWidget 使用
 class learnStateLess extends StatelessWidget {
   @override
   Widget build(BuildContext context) {

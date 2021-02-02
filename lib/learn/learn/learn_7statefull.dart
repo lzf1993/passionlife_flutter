@@ -2,11 +2,7 @@ import 'package:flutter/material.dart';
 
 
 
-void main4() {
-  runApp(learnStateFull());
-}
-
-
+//StatefulWidget 使用
 class learnStateFull extends StatefulWidget {
   @override
   _LearnStateFullState createState() => _LearnStateFullState();
