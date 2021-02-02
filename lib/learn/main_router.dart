@@ -6,6 +6,7 @@ import 'learn/learn_12widget_lifecycle.dart';
 import 'learn/learn_13app_lifecycle.dart';
 import 'learn/learn_14dynamic_theme.dart';
 import 'learn/learn_15custome_font.dart';
+import 'learn/learn_16photo_app.dart';
 import 'learn/learn_5darts.dart';
 import 'learn/learn_9gesture.dart';
 import 'learn/learn_8layout.dart';
@@ -47,6 +48,7 @@ class AppRouter extends StatelessWidget {
         'appLifeCycle': (BuildContext context) => AppLifeCycle(),
         'dynamicTheme': (BuildContext context) => DynamicTheme(),
         'customFont': (BuildContext context) => CustomFont(),
+        'photoApp': (BuildContext context) => PhotoApp(),
       },
     );
   }
@@ -89,6 +91,7 @@ class _RouteNavigatorState extends State<RouteNavigator> {
           _item('APP的生命周期？', AppLifeCycle(), 'appLifeCycle'),
           _item('如何动态修改应用主题？', DynamicTheme(), 'dynamicTheme'),
           _item('自定义字体', CustomFont(), 'customFont'),
+          _item('拍照 app', PhotoApp(), 'photoApp'),
         ],
       ),
     );

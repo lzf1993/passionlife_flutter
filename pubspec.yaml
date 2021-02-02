@@ -16,6 +16,8 @@ publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 # Read more about iOS versioning at
 # https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
 version: 1.0.0+1
+module:
+  androidX: true # Add this line.
 
 environment:
   sdk: ">=2.7.0 <3.0.0"
@@ -30,6 +32,7 @@ dependencies:
   cupertino_icons: ^1.0.0
   flutter_color_plugin: ^0.0.2
   url_launcher: ^5.7.10
+  image_picker: ^0.6.7+22
 
 dev_dependencies:
   flutter_test:

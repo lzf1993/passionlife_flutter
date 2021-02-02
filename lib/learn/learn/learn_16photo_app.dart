@@ -1,25 +1,28 @@
 import 'dart:io';
 
 import 'package:flutter/material.dart';
+import 'package:image_picker/image_picker.dart';
 
 ///【实战尝鲜】拍照APP开发
+/// 使用了 Image_picker 插件 ， 我们的项目需要兼容 androidx
 class PhotoApp extends StatefulWidget {
   @override
   _PhotoAppState createState() => _PhotoAppState();
 }
+
 
 class _PhotoAppState extends State<PhotoApp> {
   List<File> _images = [];
 
   Future getImage(bool isTakePhoto) async {
     Navigator.pop(context);
-//    var image = await ImagePicker.pickImage(
-//        source: isTakePhoto ? ImageSource.camera : ImageSource.gallery);
-//    if (image != null) {
-//      setState(() {
-//        _images.add(image);
-//      });
-//    }
+    var image = await ImagePicker.pickImage(
+        source: isTakePhoto ? ImageSource.camera : ImageSource.gallery);
+    if (image != null) {
+      setState(() {
+        _images.add(image);
+      });
+    }
   }
 
   @override
