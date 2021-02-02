@@ -1,9 +1,11 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import 'learn/learn_11launch_app.dart';
 import 'learn/learn_12widget_lifecycle.dart';
 import 'learn/learn_13app_lifecycle.dart';
 import 'learn/learn_14dynamic_theme.dart';
+import 'learn/learn_15custome_font.dart';
 import 'learn/learn_5darts.dart';
 import 'learn/learn_9gesture.dart';
 import 'learn/learn_8layout.dart';
@@ -44,6 +46,7 @@ class AppRouter extends StatelessWidget {
         'launchPage': (BuildContext context) => LaunchPage(),
         'appLifeCycle': (BuildContext context) => AppLifeCycle(),
         'dynamicTheme': (BuildContext context) => DynamicTheme(),
+        'customFont': (BuildContext context) => CustomFont(),
       },
     );
   }
@@ -61,7 +64,8 @@ class _RouteNavigatorState extends State<RouteNavigator> {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return SingleChildScrollView(
+      padding: EdgeInsets.only(bottom: 35,top: 15),
       child: Column(
         children: <Widget>[
           SwitchListTile(
@@ -84,6 +88,7 @@ class _RouteNavigatorState extends State<RouteNavigator> {
           _item('组件的生命周期？', WidgetLifecycle(), 'widgetLifecycle'),
           _item('APP的生命周期？', AppLifeCycle(), 'appLifeCycle'),
           _item('如何动态修改应用主题？', DynamicTheme(), 'dynamicTheme'),
+          _item('自定义字体', CustomFont(), 'customFont'),
         ],
       ),
     );

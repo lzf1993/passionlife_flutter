@@ -76,3 +76,15 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
+
+  fonts:
+     - family: RubikMonoOne
+       fonts:
+         - asset: fonts/RubikMonoOne-Regular.ttf
+
+     - family: LondrinaSolid
+       fonts:
+         - asset: fonts/LondrinaSolid-Light.ttf
+         - asset: fonts/LondrinaSolid-Black.ttf
+         - asset: fonts/LondrinaSolid-Regular.ttf
+         - asset: fonts/LondrinaSolid-Thin.ttf
