@@ -65,7 +65,7 @@ abstract class Study{
 }
 
 //实现类
-class StudyFlutter extends Study{
+class LearnFlutter extends Study{
   @override
   void study() {
      print('flutter study ');

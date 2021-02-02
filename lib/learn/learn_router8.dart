@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import 'learn_gesture9.dart';
 import 'learn_layout8.dart';
 import 'learn_plugin_use5.dart';
 import 'learn_statefull7.dart';
@@ -32,6 +33,7 @@ class AppRouter extends StatelessWidget {
         'learnLayout': (BuildContext context) => learnLayout(),
         'learnStateFull': (BuildContext context) => learnStateFull(),
         'learnLessFull': (BuildContext context) => learnLessFull(),
+        'gesturePage': (BuildContext context) => GesturePage(),
       },
     );
   }
@@ -65,6 +67,7 @@ class _RouteNavigatorState extends State<RouteNavigator> {
           _item('StatefulWidget与基础组件', learnStateFull(), 'learnStateFull'),
           _item('StatelessWidget与基础组件', learnLessFull(), 'learnLessFull'),
           _item('如何创建和使用Flutter的路由与导航？', AppRouter(), 'route'),
+          _item('用户手势检测和点击事件', GesturePage(), 'gesturePage'),
         ],
       ),
     );

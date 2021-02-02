@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:passionlife/study/learn_function2.dart';
 
-import 'study/learn_datatype1.dart';
-import 'study/learn_oop4.dart';
-
+import 'learn/learn_datatype1.dart';
+import 'learn/learn_function2.dart';
+import 'learn/learn_oop4.dart';
 
 void main2() {
   runApp(MyApp());
@@ -36,7 +35,7 @@ class MyApp extends StatelessWidget {
      s2.name;
 
      //实例化
-     StudyFlutter flutter = StudyFlutter();
+     LearnFlutter flutter = LearnFlutter();
      flutter.study();
 
      TestFunction learn = TestFunction();
