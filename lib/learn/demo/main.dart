@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
-import '../learn_plugin_use5.dart';
+import '../learn/learn_5plugin_use.dart';
 import 'flutter_layout_page.dart';
 import 'gesture_page.dart';
-import 'launch_page.dart';
+import '../learn/learn_11launch_app.dart';
 import 'less_group_page.dart';
 import 'photo_app_page.dart';
 import 'res_page.dart';

@@ -3,10 +3,10 @@ import 'package:flutter/material.dart';
 
 
 void main3() {
-  runApp(learnLessFull());
+  runApp(learnStateLess());
 }
 
-class learnLessFull extends StatelessWidget {
+class learnStateLess extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
 

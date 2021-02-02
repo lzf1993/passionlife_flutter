@@ -1,11 +1,16 @@
 import 'package:flutter/material.dart';
 
-import 'learn_gesture9.dart';
-import 'learn_layout8.dart';
-import 'learn_plugin_use5.dart';
-import 'learn_res_page10.dart';
-import 'learn_statefull7.dart';
-import 'learn_stateless6.dart';
+import 'learn/learn_11launch_app.dart';
+import 'learn/learn_12widget_lifecycle.dart';
+import 'learn/learn_13app_lifecycle.dart';
+import 'learn/learn_14dynamic_theme.dart';
+import 'learn/learn_5darts.dart';
+import 'learn/learn_9gesture.dart';
+import 'learn/learn_8layout.dart';
+import 'learn/learn_5plugin_use.dart';
+import 'learn/learn_10res_page.dart';
+import 'learn/learn_7statefull.dart';
+import 'learn/learn_6stateless.dart';
 
 
 
@@ -29,13 +34,16 @@ class AppRouter extends StatelessWidget {
         body: RouteNavigator(),
       ),
       routes: <String, WidgetBuilder>{
-        'route': (BuildContext context) => AppRouter(),
+        'dartStudy': (BuildContext context) => DartStudy(),
         'pluginUse': (BuildContext context) => PluginUse(),
-        'learnLayout': (BuildContext context) => learnLayout(),
+        'learnStateLess': (BuildContext context) => learnStateLess(),
         'learnStateFull': (BuildContext context) => learnStateFull(),
-        'learnLessFull': (BuildContext context) => learnLessFull(),
+        'learnLayout': (BuildContext context) => learnLayout(),
         'gesturePage': (BuildContext context) => GesturePage(),
         'resPage': (BuildContext context) => ResPage(),
+        'launchPage': (BuildContext context) => LaunchPage(),
+        'appLifeCycle': (BuildContext context) => AppLifeCycle(),
+        'dynamicTheme': (BuildContext context) => DynamicTheme(),
       },
     );
   }
@@ -64,13 +72,18 @@ class _RouteNavigatorState extends State<RouteNavigator> {
                   byName = value;
                 });
               }),
+          _item('Flutter Dart 语法学习', DartStudy(), 'dartStudy'),
           _item('如何使用Flutter包和插件？', PluginUse(), 'pluginUse'),
           _item('布局组件', learnLayout(), 'learnLayout'),
           _item('StatefulWidget与基础组件', learnStateFull(), 'learnStateFull'),
-          _item('StatelessWidget与基础组件', learnLessFull(), 'learnLessFull'),
+          _item('StatelessWidget与基础组件', learnStateLess(), 'learnStateLess'),
           _item('如何创建和使用Flutter的路由与导航？', AppRouter(), 'route'),
           _item('用户手势检测和点击事件', GesturePage(), 'gesturePage'),
           _item('如何使用资源文件', ResPage(), 'resPage'),
+          _item('如何打开第三方应用？', LaunchPage(), 'launchPage'),
+          _item('组件的生命周期？', WidgetLifecycle(), 'widgetLifecycle'),
+          _item('APP的生命周期？', AppLifeCycle(), 'appLifeCycle'),
+          _item('如何动态修改应用主题？', DynamicTheme(), 'dynamicTheme'),
         ],
       ),
     );

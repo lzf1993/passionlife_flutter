@@ -1,19 +1,20 @@
 import 'package:flutter/material.dart';
 
-import 'learn/learn_datatype1.dart';
-import 'learn/learn_function2.dart';
-import 'learn/learn_oop4.dart';
+import 'learn_1datatype.dart';
+import 'learn_2function.dart';
+import 'learn_4oop.dart';
 
 void main2() {
-  runApp(MyApp());
+  runApp(DartStudy());
 }
 
-class MyApp extends StatelessWidget {
+
+class DartStudy extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     _oopLearn();
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Flutter Dart 语法学习',
       theme: ThemeData(
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
@@ -21,6 +22,7 @@ class MyApp extends StatelessWidget {
       home: MyHomePage(title: 'Flutter Demo Home Page'),
     );
   }
+
 
   void _oopLearn(){
      Logger log1 = new Logger();
@@ -51,6 +53,7 @@ class MyHomePage extends StatefulWidget {
   @override
   _MyHomePageState createState() => _MyHomePageState();
 }
+
 
 class _MyHomePageState extends State<MyHomePage> {
 
